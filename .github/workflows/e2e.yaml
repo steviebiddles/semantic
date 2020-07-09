@@ -11,5 +11,5 @@ jobs:
     name: End to end test
     runs-on: ubuntu-latest
     steps:
-      - uses: actions/checkout@v2
+      - name: Echo
         run: echo running e2e tests...
