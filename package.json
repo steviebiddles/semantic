@@ -1,0 +1,28 @@
+{
+  "name": "semantic",
+  "version": "0.0.0",
+  "private": true,
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "keywords": [],
+  "author": "",
+  "license": "ISC",
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "semantic-release": "^17.1.1"
+  },
+  "release": {
+    "branches": [
+      "master"
+    ]
+  },
+  "repository": {
+    "type": "git",
+    "url": "git@github.com:steviebiddles/semantic"
+  }
+}
