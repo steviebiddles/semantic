@@ -3,7 +3,7 @@ name: Deploy
 on:
 
   release:
-    types: [created, published]
+    types: [published]
 
 jobs:
 
