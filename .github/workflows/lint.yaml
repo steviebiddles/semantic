@@ -1,0 +1,28 @@
+name: Lint
+
+on:
+
+  pull_request:
+    branches:
+      - master
+
+jobs:
+
+  lint:
+    name: Lint code
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        run: echo linting...
+
+  lint_commit:
+    name: Lint commit message
+    runs-on: ubuntu-latest
+    steps:
+      - uses: actions/checkout@v2
+        with:
+          fetch-depth: 0
+      - name: Install development tools
+        run: npm install
+      - name: Lint commit messages
+        run: npm run lint:commit
