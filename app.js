@@ -21,4 +21,10 @@ app.get('/test', (req, res) => {
     });
 })
 
+app.get('/hello', (req, res) => {
+    res.send({
+        message: 'Hello 123!'
+    });
+})
+
 app.listen(port, () => console.log(`listening on port ${port}!`));
