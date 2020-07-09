@@ -15,4 +15,10 @@ app.get('/demo', (req, res) => {
     });
 })
 
+app.get('/test', (req, res) => {
+    res.send({
+        message: 'Test 123!'
+    });
+})
+
 app.listen(port, () => console.log(`listening on port ${port}!`));
